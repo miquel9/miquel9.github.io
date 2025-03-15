@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Conversor Word a PDF</title>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.9.1/font/bootstrap-icons.css">
+    <link rel="stylesheet" type="text/css" href="https://cdn.jsdelivr.net/npm/toastify-js/src/toastify.min.css">
+    <link rel="stylesheet" href="./css/main.css">
+</head>
+<body>
+    <div class="wrapper">
+        <header class="header-mobile">
+            <h1 class="logo">
+                <img src="https://navarretealum.com/images/logo.png" alt="NAVARRETE HNOS">
+            </h1>
+            <button class="open-menu" id="open-menu">
+                <i class="bi bi-list"></i>
+            </button>
+        </header>
+        <aside>
+            <button class="close-menu" id="close-menu">
+                <i class="bi bi-x"></i>
+            </button>
+            <h1 class="logo">
+                <img src="https://navarretealum.com/images/logo.png" alt="NAVARRETE HNOS">
+            </h1>
+            <nav>
+                <ul>
+                    <li>
+                        <a class="boton-menu boton-volver" href="./index.html">
+                            <i class="bi bi-arrow-return-left"></i> Seguir comprando
+                        </a>
+                    </li>
+                    <li>
+                        <a class="boton-menu boton-carrito" href="./carrito.html">
+                            <i class="bi bi-cart-fill"></i> Carrito
+                        </a>
+                    </li>
+                    <li>
+                        <a class="boton-menu boton-pedidos" href="./pedidos.html">
+                            <i class="bi bi-file-earmark-text"></i> Pedidos
+                        </a>
+                    </li>
+                    <li>
+                        <a class="boton-menu boton-archivados" href="./archivados.html">
+                            <i class="bi bi-archive-fill"></i> Archivados
+                        </a>
+                    </li>
+                    <li>
+                        <a class="boton-menu boton-conversor active" href="./conversor.html">
+                            <i class="bi bi-file-earmark-arrow-down"></i> Conversor
+                        </a>
+                    </li>
+                </ul>
+            </nav>
+            <footer>
+                <p class="texto-footer">© Miquel Navarrete de Lanuza</p>
+            </footer>
+        </aside>
+        <main>
+            <h2 class="titulo-principal">Conversor Word a PDF</h2>
+            <div class="conversor-word-pdf">
+                <div class="conversor-container">
+                    <input type="file" id="word-file-input" accept=".docx,.doc" />
+                    <button id="convert-to-pdf-btn" class="boton-menu">Convertir a PDF</button>
+                </div>
+                <div id="conversion-status"></div>
+            </div>
+        </main>
+    </div>
+    
+    <script src="https://cdn.jsdelivr.net/npm/toastify-js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/sweetalert2@11"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/FileSaver.js/2.0.5/FileSaver.min.js"></script>
+    <script src="./js/menu.js"></script>
+    <script src="./js/conversor.js"></script>
+</body>
+</html>

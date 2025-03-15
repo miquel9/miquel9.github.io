@@ -1,0 +1,160 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>NAVARRETE HNOS</title>
+        <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.9.1/font/bootstrap-icons.css">
+    <link rel="stylesheet" type="text/css" href="https://cdn.jsdelivr.net/npm/toastify-js/src/toastify.min.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/sweetalert2@11/dist/sweetalert2.min.css">
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jspdf/2.4.0/jspdf.umd.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/sweetalert2@11"></script>
+    <link rel="stylesheet" href="./css/main.css">
+</head>
+<body>
+    <div class="wrapper">
+        <!-- Encabezado móvil -->
+        <header class="header-mobile">
+            <h1 class="logo">
+                <img src="https://navarretealum.com/images/logo.png" alt="NAVARRETE HNOS">
+            </h1>
+            <button class="open-menu" id="open-menu">
+                <i class="bi bi-list"></i>
+            </button>
+        </header>
+        <!-- Barra lateral -->
+        <aside>
+            <button class="close-menu" id="close-menu">
+                <i class="bi bi-x"></i>
+            </button>
+            <header>
+                <h1 class="logo">
+                    <img src="https://navarretealum.com/images/logo.png" alt="NAVARRETE HNOS">
+                </h1>
+            </header>
+            <nav>
+                <ul class="menu">
+                    <li>
+                        <button id="todos" class="boton-menu boton-categoria active"><i class="bi bi-hand-index-thumb-fill"></i> Todos los productos</button>
+                    </li>
+                    <!-- Botones de categorías -->
+                    <li>
+                        <button id="cristales" class="boton-menu boton-categoria"><i class="bi bi-hand-index-thumb"></i> Cristales</button>
+                    </li>
+                    <li>
+                        <button id="fijos" class="boton-menu boton-categoria"><i class="bi bi-hand-index-thumb"></i> Fijos</button>
+                    </li>
+                    <li>
+                        <button id="herrajes" class="boton-menu boton-categoria"><i class="bi bi-hand-index-thumb"></i> Herrajes</button>
+                    </li>
+                    <li>
+                        <button id="mallorquinas" class="boton-menu boton-categoria"><i class="bi bi-hand-index-thumb"></i> Mallorquinas</button>
+                    </li>
+                    <li>
+                        <button id="mosquiteras" class="boton-menu boton-categoria"><i class="bi bi-hand-index-thumb"></i> Mosquiteras</button>
+                    </li>
+                    <li>
+                        <button id="persianas" class="boton-menu boton-categoria"><i class="bi bi-hand-index-thumb"></i> Persianas</button>
+                    </li>
+                    <li>
+                        <button id="puertas" class="boton-menu boton-categoria"><i class="bi bi-hand-index-thumb"></i> Puertas</button>
+                    </li>
+                    <li>
+                        <button id="ventanas-doble-hoja" class="boton-menu boton-categoria"><i class="bi bi-hand-index-thumb"></i> Ventanas Doble Hoja</button>
+                    </li>
+                    <li>
+                        <button id="ventanas-una-hoja" class="boton-menu boton-categoria"><i class="bi bi-hand-index-thumb"></i> Ventanas Una Hoja</button>
+                    </li>
+                    <!-- Más botones de categorías -->
+                    <li>        
+                        <a class="boton-menu boton-carrito" href="./carrito.html">
+                            <i class="bi bi-cart-fill"></i> Carrito <span id="numerito" class="numerito">0</span>
+                        </a>
+                    </li>
+                    <li>
+                        <a class="boton-menu boton-pedidos" href="./pedidos.html">
+                            <i class="bi bi-file-earmark-text"></i> Pedidos
+                        </a>
+                    </li>
+                </ul>
+            </nav>
+            <footer>
+                <p class="texto-footer">© Miquel Navarrete de Lanuza</p>
+            </footer>
+        </aside>
+        <!-- Contenido principal -->
+        <main>
+            <div class="search-bar-container">
+                <button id="agregar-producto" class="boton-menu"><i class="bi bi-plus-circle"></i> Añadir Producto</button>
+                <div class="search-bar">
+                    <input type="text" id="search-input" placeholder="Buscar productos...">
+                </div>
+            </div>
+            <h2 class="titulo-principal" id="titulo-principal">Todos los productos</h2>
+            <div id="contenedor-productos" class="contenedor-productos">
+                <!-- Productos se cargarán aquí con JS -->
+            </div>
+        </main>
+    </div>
+
+    <!-- Modal para calcular el precio -->
+    <div id="modal-calcular-precio" class="modal">
+        <div class="modal-contenido">
+            <h2>Calcular el precio</h2>
+            <label for="alto">Alto (cm):</label>
+            <input type="number" id="alto" name="alto" placeholder="Ingrese el alto">
+            <label for="largo">Largo (cm):</label>
+            <input type="number" id="largo" name="largo" placeholder="Ingrese el largo">
+            <div id="color-container" class="select-container">
+                <label for="color">Color:</label>
+                <select id="color" name="color">
+                    <option value="0">Blanco y plata (0%)</option>
+                    <option value="15">Bronce (15%)</option>
+                    <option value="35">Madera (35%)</option>
+                    <option value="25">Colores (25%)</option>
+                </select>
+            </div>
+            <button id="calcular-precio">Calcular Precio</button>
+            <p id="resultado-precio"></p>
+            <button id="agregar-al-carrito" style="display: none;">Agregar al carrito</button>
+            <button id="cerrar-modal">Cerrar</button>
+        </div>
+    </div>
+
+    <!-- Modal para añadir nuevos productos -->
+    <div id="modal-add-product" class="modal">
+        <div class="modal-contenido">
+            <h2>Añadir nuevo producto</h2>
+            <label for="nuevo-titulo">Título:</label>
+            <input type="text" id="nuevo-titulo" name="nuevo-titulo" placeholder="Ingrese el título">
+            <label for="nueva-imagen">URL de la imagen:</label>
+            <input type="text" id="nueva-imagen" name="nueva-imagen" placeholder="Ingrese la URL de la imagen">
+            <select id="nuevo-apartado" name="nuevo-apartado">
+                <option value="cristales">Cristales</option>
+                <option value="ventanas-doble-hoja">Ventanas Doble Hoja</option>
+                <option value="ventanas-una-hoja">Ventanas Una Hoja</option>
+                <option value="puertas">Puertas</option>
+                <option value="mallorquinas">Mallorquinas</option>
+                <option value="mosquiteras">Mosquiteras</option>
+                <option value="persianas">Persianas</option>
+                <option value="fijos">Fijos</option>
+                <option value="herrajes">Herrajes</option>
+            </select>
+            <button id="guardar-producto">Guardar producto</button>
+            <button id="cerrar-modal-add-product">Cerrar</button>
+        </div>
+    </div>
+
+    <!-- Toastify y scripts -->
+    <script type="text/javascript" src="https://cdn.jsdelivr.net/npm/toastify-js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/sweetalert2@11"></script>
+    <script src="https://unpkg.com/docx@7.8.2/build/index.js"></script>
+    <script src="https://unpkg.com/docx@7.8.2/build/index.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/FileSaver.js/2.0.5/FileSaver.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jspdf/2.5.1/jspdf.umd.min.js"></script>
+    <script src="./js/main.js"></script>
+    <script src="./js/menu.js"></script>
+</body>
+</html>
