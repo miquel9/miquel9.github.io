@@ -1,0 +1,262 @@
+[
+  {
+    "id": "producto-1740310347798",
+    "titulo": "V/C      4/  /4",
+    "imagen": "https://png.pngtree.com/png-vector/20240519/ourmid/pngtree-illuminated-vacant-texture-room-png-image_12323899.png",
+    "categoria": {
+      "nombre": "cristales",
+      "id": "cristales"
+    },
+    "precioAlto": 55
+  },
+  {
+    "id": "producto-1740310400423",
+    "titulo": "V/C   Mate   4/  /4",
+    "imagen": "https://png.pngtree.com/png-vector/20240519/ourmid/pngtree-illuminated-vacant-texture-room-png-image_12323899.png",
+    "categoria": {
+      "nombre": "cristales",
+      "id": "cristales"
+    },
+    "precioAlto": 80
+  },
+  {
+    "id": "producto-1740310531435",
+    "titulo": "V/C   3+3 Mate   4/  /4",
+    "imagen": "https://png.pngtree.com/png-vector/20240519/ourmid/pngtree-illuminated-vacant-texture-room-png-image_12323899.png",
+    "categoria": {
+      "nombre": "cristales",
+      "id": "cristales"
+    },
+    "precioAlto": 100
+  },
+  {
+    "id": "producto-1740310592188",
+    "titulo": "V/C   4+4    acustic/  /4",
+    "imagen": "https://png.pngtree.com/png-vector/20240519/ourmid/pngtree-illuminated-vacant-texture-room-png-image_12323899.png",
+    "categoria": {
+      "nombre": "cristales",
+      "id": "cristales"
+    },
+    "precioAlto": 110
+  },
+  {
+    "id": "producto-1740310672352",
+    "titulo": "V/C   4+4    acustic/  / G.S  4/",
+    "imagen": "https://png.pngtree.com/png-vector/20240519/ourmid/pngtree-illuminated-vacant-texture-room-png-image_12323899.png",
+    "categoria": {
+      "nombre": "cristales",
+      "id": "cristales"
+    },
+    "precioAlto": 135
+  },
+  {
+    "id": "producto-1740310701502",
+    "titulo": "V/C   4    acustic/  / G.S  4/",
+    "imagen": "https://png.pngtree.com/png-vector/20240519/ourmid/pngtree-illuminated-vacant-texture-room-png-image_12323899.png",
+    "categoria": {
+      "nombre": "cristales",
+      "id": "cristales"
+    },
+    "precioAlto": 90
+  },
+  {
+    "id": "producto-1740325308084",
+    "titulo": "Herrajes puerta 1H",
+    "imagen": "https://png.pngtree.com/png-vector/20240519/ourmid/pngtree-illuminated-vacant-texture-room-png-image_12323899.png",
+    "categoria": {
+      "nombre": "herrajes",
+      "id": "herrajes"
+    },
+    "precioAlto": 0,
+    "precioHerraje": 85
+  },
+  {
+    "id": "producto-1740325337133",
+    "titulo": "Herrajes puerta 2H",
+    "imagen": "https://png.pngtree.com/png-vector/20240519/ourmid/pngtree-illuminated-vacant-texture-room-png-image_12323899.png",
+    "categoria": {
+      "nombre": "herrajes",
+      "id": "herrajes"
+    },
+    "precioAlto": 0,
+    "precioHerraje": 115
+  },
+  {
+    "id": "producto-1740325354582",
+    "titulo": "Herrajes oscilo 1H",
+    "imagen": "https://png.pngtree.com/png-vector/20240519/ourmid/pngtree-illuminated-vacant-texture-room-png-image_12323899.png",
+    "categoria": {
+      "nombre": "herrajes",
+      "id": "herrajes"
+    },
+    "precioAlto": 0,
+    "precioHerraje": 55
+  },
+  {
+    "id": "producto-1740325360707",
+    "titulo": "Herrajes oscilo 2H",
+    "imagen": "https://png.pngtree.com/png-vector/20240519/ourmid/pngtree-illuminated-vacant-texture-room-png-image_12323899.png",
+    "categoria": {
+      "nombre": "herrajes",
+      "id": "herrajes"
+    },
+    "precioAlto": 0,
+    "precioHerraje": 80
+  },
+  {
+    "id": "producto-1740325374482",
+    "titulo": "Herrajes puerta seguridad",
+    "imagen": "https://png.pngtree.com/png-vector/20240519/ourmid/pngtree-illuminated-vacant-texture-room-png-image_12323899.png",
+    "categoria": {
+      "nombre": "herrajes",
+      "id": "herrajes"
+    },
+    "precioAlto": 0,
+    "precioHerraje": 180
+  },
+  {
+    "id": "producto-1740326897828",
+    "titulo": "Practicable 2 hojas V-94",
+    "imagen": "https://www.cerrajeriajorgeesteve.com/48/ventana-oscilobatiente-de-2-hojas.jpg",
+    "categoria": {
+      "nombre": "ventanas doble hoja",
+      "id": "ventanas-doble-hoja"
+    },
+    "precioAlto": 4,
+    "precioAncho": 6,
+    "constanteAdicional": 92
+  },
+  {
+    "id": "producto-1740327018568",
+    "titulo": "Practicable 1 hoja V-94",
+    "imagen": "https://pidetuventanacanarias.es/64-large_default/ventana-oscilobatiente-de-1-hoja.jpg",
+    "categoria": {
+      "nombre": "ventanas una hoja",
+      "id": "ventanas-una-hoja"
+    },
+    "precioAlto": 0,
+    "precioAncho": 0
+  },
+  {
+    "id": "producto-1740327074266",
+    "titulo": "Puerta 1 hoja V-94 y 40x40 sin herrajes",
+    "imagen": "https://www.cerrajeriajorgeesteve.com/50/ventana-oscilo-batiente-de-1-hoja.jpg",
+    "categoria": {
+      "nombre": "puertas",
+      "id": "puertas"
+    },
+    "precioAlto": 0,
+    "precioAncho": 0
+  },
+  {
+    "id": "producto-1740327221853",
+    "titulo": "Puerta 2 hojas V-94 y 40x40 sin herrajes",
+    "imagen": "https://ventanasvital.es/wp-content/uploads/2018/02/ventana-pvc-2-hojas-osilobatiente.png",
+    "categoria": {
+      "nombre": "puertas",
+      "id": "puertas"
+    },
+    "precioAlto": 0,
+    "precioAncho": 0
+  },
+  {
+    "id": "producto-1740327412330",
+    "titulo": "Marco Fijo P-18",
+    "imagen": "https://ecasa.app/290-large_default/ventana-pvc-fija-a-medida-sd70.jpg",
+    "categoria": {
+      "nombre": "fijos",
+      "id": "fijos"
+    },
+    "precioAlto": 0,
+    "precioAncho": 0
+  },
+  {
+    "id": "producto-1740327467352",
+    "titulo": "Serie P-18",
+    "imagen": "https://ecasa.app/278-home_default/ventana-pvc-corredera-a-medida-2-hojas-so70.jpg",
+    "categoria": {
+      "nombre": "ventanas doble hoja",
+      "id": "ventanas-doble-hoja"
+    },
+    "precioAlto": 0,
+    "precioAncho": 0
+  },
+  {
+    "id": "producto-1740327537759",
+    "titulo": "Serie P-18 + Solape",
+    "imagen": "https://www.cerrajeriajorgeesteve.com/45-large_default/ventana-corredera-de-2-hojas.jpg",
+    "categoria": {
+      "nombre": "ventanas doble hoja",
+      "id": "ventanas-doble-hoja"
+    },
+    "precioAlto": 0,
+    "precioAncho": 0
+  },
+  {
+    "id": "producto-1740327809709",
+    "titulo": "R.P.T. 45 1 hoja",
+    "imagen": "https://vitroventanas.com/wp-content/uploads/2020/02/Oscilobatiente.jpg",
+    "categoria": {
+      "nombre": "ventanas una hoja",
+      "id": "ventanas-una-hoja"
+    },
+    "precioAlto": 0,
+    "precioAncho": 0
+  },
+  {
+    "id": "producto-1740328119440",
+    "titulo": "R.B.T. 45 2 Hojas",
+    "imagen": "https://ventanasvital.es/wp-content/uploads/2018/02/ventana-pvc-2-hojas-osilobatiente.png",
+    "categoria": {
+      "nombre": "ventanas doble hoja",
+      "id": "ventanas-doble-hoja"
+    },
+    "precioAlto": 0,
+    "precioAncho": 0
+  },
+  {
+    "id": "producto-1740328596883",
+    "titulo": "R.P.T. 65 1 Hoja",
+    "imagen": "https://www.stilo20.es/storage/2023/12/OSCILO-BATIENTE-UNA-HOJA.jpg",
+    "categoria": {
+      "nombre": "ventanas una hoja",
+      "id": "ventanas-una-hoja"
+    },
+    "precioAlto": 80,
+    "precioAncho": 90,
+    "constanteAdicional": 27
+  },
+  {
+    "id": "producto-1740328737828",
+    "titulo": "R.P.T. 65 2 Hojas",
+    "imagen": "https://ventanasvital.es/wp-content/uploads/2018/02/ventana-pvc-2-hojas-osilobatiente.png",
+    "categoria": {
+      "nombre": "ventanas doble hoja",
+      "id": "ventanas-doble-hoja"
+    },
+    "precioAlto": 0,
+    "precioAncho": 0
+  },
+  {
+    "id": "producto-1741524792635",
+    "titulo": "Prueba ventana",
+    "imagen": "https://www.strugal.com/sites/default/files/2021-08/aperturas-ventanas.jpg",
+    "categoria": {
+      "nombre": "ventanas doble hoja",
+      "id": "ventanas-doble-hoja"
+    },
+    "precioAlto": 32,
+    "precioAncho": 12,
+    "constanteAdicional": 11
+  },
+  {
+    "id": "producto-1741525882963",
+    "titulo": "perisanananaa",
+    "imagen": "https://www.cortinadecor.com/public/images/superCategories/shutters/persiana_enrollable_con_cajon_motorizada.jpg",
+    "categoria": {
+      "nombre": "persianas",
+      "id": "persianas"
+    },
+    "precioAlto": 18
+  }
+]
